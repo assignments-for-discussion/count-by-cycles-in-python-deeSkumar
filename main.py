@@ -6,7 +6,7 @@ for i in range(numberofbatteries):
   battery_charge_cycles = int(input("Enter the number of  charge cycles"))
   if(battery_charge_cycles<150):
     low=low+1
-  elif(battery_charge_cycles > 150 && battery_charge_cycle < 649):
+  elif(battery_charge_cycles > 150 & battery_charge_cycle < 649):
     medium=medium+1
   else:
     high=high+1
