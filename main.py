@@ -1,9 +1,25 @@
+low=0
+medium=0
+high=0
+numberofbatteries=int(input("enter the number of batteries"))
+for i in range(numberofbatteries):
+  battery_charge_cycles = int(input("Enter the number of  charge cycles"))
+  if(battery_charge_cycles<150):
+    low=low+1
+  elif(battery_charge_cycles > 150 && battery_charge_cycle < 649):
+    medium=medium+1
+  else:
+    high=high+1
+print("Low count"low)
+print("medium count"medium)
+print("high count"high)
 
 def count_batteries_by_usage(cycles):
   return {
     "lowCount": 0,
     "mediumCount": 0,
     "highCount": 0
+    
   }
 
 
